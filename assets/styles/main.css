@@ -10254,4 +10254,8 @@ form .input-error-2:focus {
   background: #f8f8f8;
 }
 
+#ck_success_msg {
+  margin-top: -50px;
+}
+
 /*# sourceMappingURL=main.css.map */
