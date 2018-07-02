@@ -354,27 +354,41 @@
 
         <!-- ========== CTA - Newsletter Signup ========== -->
 
+        <script src="https://assets.convertkit.com/assets/CKJS4.js?v=21"></script>
+
+
+
         <div class="cta-newsletter cta-dark">
           <div class="bg-overlay">
             <section id="join" class="cta-wrapper">
 
               <h3 class="cta-lead h-alt wow fadeIn" data-wow-delay=".1s" data-wow-duration="1s">Join our newsletter</h3>
 
-              <form class="mc-ajax mc-form subscribe-form" _lpchecked="1">
+              <form id="ck_subscribe_form" class="mc-ajax mc-form subscribe-form ck_form_container ck_inline ck_subscribe_form" action="https://app.convertkit.com/landing_pages/414263/subscribe" data-remote="true" data-ck-version="7" _lpchecked="1">
+                <input type="hidden" value="{&quot;form_style&quot;:&quot;minimal&quot;,&quot;converted_behavior&quot;:&quot;show&quot;,&quot;days_no_show&quot;:&quot;15&quot;,&quot;delay_seconds&quot;:&quot;10&quot;,&quot;display_devices&quot;:&quot;all&quot;,&quot;display_position&quot;:&quot;br&quot;,&quot;embed_style&quot;:&quot;inline&quot;,&quot;embed_trigger&quot;:&quot;scroll_percentage&quot;,&quot;scroll_percentage&quot;:&quot;70&quot;}" id="ck_form_options">
+                <input type="hidden" name="id" value="414263" id="landing_page_id">
+                <input type="hidden" name="ck_form_recaptcha" value="" id="ck_form_recaptcha">
+
+                <div class="ck_errorArea">
+                  <div id="ck_error_msg" style="display:none">
+                    <p>There was an error submitting your subscription. Please try again.</p>
+                  </div>
+                </div>
 
                 <!-- Email -->
-                <input type="email" name="EMAIL" placeholder="Your email address" id="mc-email" class="wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s" >
+                <input type="email" name="email" placeholder="Your email address" id="ck_emailField" class="wow fadeInUp" data-wow-delay=".1s" data-wow-duration="1s" >
+
+                <div class="ck_control_group ck_captcha2_h_field_group ck-captcha2-h" style="position: absolute !important;left: -999em !important;">
+                    <input type="text" name="captcha2_h" class="ck-captcha2-h" id="ck_captcha2_h" placeholder="We use this field to detect spam bots. If you fill this in, you will be marked as a spammer.">
+                  </div>
 
                 <!-- Send Button -->
-                <input type="submit" name="subscribe" value="Join Us" class="btn btn-light btn-large wow fadeInUp mc-send-btn" data-wow-delay=".1s" data-wow-duration="1s">
-
-                <!-- Info (uncomment this for extra info) -->
-                <!-- <label for="mc-email" class="mc-info"></label> -->
-
-                <!-- Ajax message -->
-                <div class="subscribe-result"></div>
-
+                <input type="submit" name="subscribe" value="Join Us" id="ck_subscribe_button" class="btn btn-light btn-large wow fadeInUp mc-send-btn subscribe_button ck_subscribe_button btn fields" data-wow-delay=".1s" data-wow-duration="1s">
               </form>
+
+              <div id="ck_success_msg" style="display:none;">
+                <p>Success! Now check your email to confirm your subscription.</p>
+              </div>
 
             </div><!-- / .cta-wrapper -->
           </div><!-- / .bg-overlay -->
@@ -439,7 +453,6 @@
         <script src="assets/js/vendor/isotope.min.js"></script>
         <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
         <script src="assets/js/vendor/wow.min.js"></script>
-        <script src="assets/js/vendor/jquery.ajaxchimp.js"></script>
         <script src="assets/js/vendor/animDots.js"></script>
 
         <!-- Google Maps -->
