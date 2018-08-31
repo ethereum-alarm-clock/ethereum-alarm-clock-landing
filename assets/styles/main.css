@@ -289,7 +289,7 @@ hr {
 
 /* ---- White Space ---- */
 .ws-s {
-  padding-bottom: 50px;
+  padding-bottom: 0px;
 }
 
 .ws-m {
@@ -579,7 +579,7 @@ hr {
 
 /* ---- Section Headings ---- */
 .sec-heading {
-  margin-bottom: 100px;
+  margin-bottom: 70px;
   text-align: center;
 }
 
@@ -3275,7 +3275,7 @@ fieldset[disabled] .form-control:hover {
   position: absolute;
   top: 7px;
   left: 0;
-  color: rgba(204, 204, 204, 0.4);
+  color: rgba(204, 204, 204, 0.2);
   font-family: "Open Sans", "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: lighter;
   font-size: 165px;
