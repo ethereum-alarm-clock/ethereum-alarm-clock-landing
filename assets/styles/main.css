@@ -1623,12 +1623,12 @@ input[class="btn-ghost"]:after {
 
 .btn-light:visited {
   color: #111;
-  background: #ececec;
+  background: #52CACB;
 }
 
 .btn-light:visited:hover {
   color: #111;
-  background: #bebebe;
+  background: #75D4D5;
 }
 
 .btn-light:hover {
