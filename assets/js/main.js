@@ -20,6 +20,7 @@
 		initVideoBg();
 		initKenburns();
 		initCountdown();
+		initEthTranferredCounter();
 
 		if ( document.getElementById('shop-slider-range') ) {
 			initRangeSlider();
@@ -780,6 +781,14 @@
 
 	}
 
+/* --------------------------------------------------
+       Initializes the counter for the total amount of transferred ETH
+-------------------------------------------------- */
+	function initEthTranferredCounter() {
+		EacCounter.getTotalEthTransferred().then(function (value) {
+			document.getElementById('ethTransferredCounter').innerHTML = String(Math.round(value));
+		});
+	}
 
 
 /* --------------------------------------------------
