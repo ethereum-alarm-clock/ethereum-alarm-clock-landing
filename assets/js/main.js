@@ -787,6 +787,7 @@
 	function initEthTranferredCounter() {
 		EacCounter.getTotalEthTransferred().then(function (value) {
 			document.getElementById('ethTransferredCounter').innerHTML = String(Math.round(value));
+			document.getElementById('ethTransferredWrapper').classList.remove('hide');
 		});
 	}
 

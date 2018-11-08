@@ -10258,4 +10258,13 @@ form .input-error-2:focus {
   margin-top: -50px;
 }
 
+#ethTransferredWrapper {
+  margin-top: 50px;
+}
+
+#ethTransferredCounterWrapper {
+  font-size: 44px !important;
+  color: #52CACB;
+}
+
 /*# sourceMappingURL=main.css.map */
