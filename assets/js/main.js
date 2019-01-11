@@ -799,7 +799,8 @@
 						currency: 'USD',
 						minimumFractionDigits: 0
 					});
-					document.getElementById('usdTransferredCounter').innerHTML = formatter.format(Math.round(value.usd));
+					document.getElementById('usdTransferredCounter').innerHTML = formatter.format(Math.round(value.usd)) + '*';
+
 				}
 			});
 		});
