@@ -1623,12 +1623,12 @@ input[class="btn-ghost"]:after {
 
 .btn-light:visited {
   color: #111;
-  background: #ececec;
+  background: #52CACB;
 }
 
 .btn-light:visited:hover {
   color: #111;
-  background: #bebebe;
+  background: #75D4D5;
 }
 
 .btn-light:hover {
@@ -10256,6 +10256,33 @@ form .input-error-2:focus {
 
 #ck_success_msg {
   margin-top: -50px;
+}
+
+#ethTransferredWrapper {
+  margin-top: 50px;
+}
+
+#ethTransferredCounterWrapper {
+  font-size: 44px !important;
+  color: #52CACB;
+}
+
+#usdTransferredCounter {
+  color: #52CACB;
+}
+
+#nomicsCredits a {
+  color: #52CACB;
+}
+
+.image-chronologic {
+  max-height: 60px;
+  max-width: 198px;
+}
+
+.image-mycrypto {
+  max-height: 60px;
+  max-width: 240px;
 }
 
 /*# sourceMappingURL=main.css.map */

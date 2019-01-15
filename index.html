@@ -92,7 +92,12 @@
                   <!-- <img src="assets/images/hero/ag2-logo.png" alt="Creative Agency Template"> -->
                   <h1 class="hero-lead">Ethereum Alarm Clock</h1>
                   <h4 class="h-alt hero-secondary">Scheduling of transactions for delayed execution in the future</h4>
-                  <a href="#features" class="btn btn-light">Read More
+                  <div id="ethTransferredWrapper" class="hide">
+                    <h4 id="ethTransferredCounterWrapper"><span id="ethTransferredCounter"></span> ETH</h4>
+                    <h4 class="h-alt hero-secondary">Transferred</h4>
+                    <h6 class="h-alt hero-secondary"><span id="usdTransferredCounter"></span></h6>
+                  </div>
+                  <a href="https://chronologic.network/schedule" class="btn btn-light" target="_blank">SCHEDULE NOW</a>
 
                   <!-- Scroller -->
                   <a href="#about" class="scroller">
@@ -269,7 +274,7 @@
             <!-- Item 1 -->
             <div class="col-lg-6 col-md-6 mb-sm-50">
               <div class="ft-item wow fadeInUp" data-wow-duration="1s">
-                <img src="assets/images/ChronoLogic.svg" alt="ChronoLogic" height="60" width="198">
+                <img src="assets/images/ChronoLogic.svg" alt="ChronoLogic" class="image-chronologic">
                 <h4>Announcing the Ethereum Alarm Clock & ChronoLogic Partnership</h4>
                 <p>ChronoLogic has solidified a partnership with & grant to Ethereum Alarm Clock as the first project that will benefit from ChronoLogic funding to support temporal innovation. Ethereum Alarm Clock currently allows scheduling of transactions for delayed execution at a specified block or time in the future.</p>
                 <a href="https://blog.chronologic.network/announcing-the-ethereum-alarm-clock-chronologic-partnership-b3d7545bea3b" target="_blank">Learn more <span class="linea-arrows-slim-right"></span></a>
@@ -279,7 +284,7 @@
             <!-- Item 2 -->
             <div class="col-lg-6 col-md-6 mb-sm-50">
               <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-                <img src="assets/images/MyCrypto.svg" alt="MyCrypto" height="60" width="240">
+                <img src="assets/images/MyCrypto.svg" class="image-mycrypto" alt="MyCrypto">
                 <h4>ChronoLogic Partners With MyCrypto For Ethereum Alarm Clock Integration</h4>
                 <p>MyCrypto is a recently-launched Ethereum blockchain interface from the team who originally developed MyEtherWallet. They have quickly integrated Shapeshift and are now partnering with ChronoLogic to implement a scheduled transactions function utilizing the Ethereum Alarm Clock.</p>
                 <a href="https://blog.chronologic.network/chronologic-partners-with-mycrypto-for-ethereum-alarm-clock-integration-e5c2e7a5666a" target="_blank">Learn more <span class="linea-arrows-slim-right"></span></a>
@@ -300,14 +305,14 @@
             <div class="row section">
 
               <header class="col-md-offset-1 col-md-10 sec-heading">
-                <h2>Explainer Video</h2>
-                <span class="subheading">Execute the future today</span>
+                <h2>Video</h2>
+                <span class="subheading">What Can You Do With The Ethereum Alarm Clock?</span>
               </header>
 
               <div class="col-md-offset-1 col-md-10">
                 <!-- 16:9 aspect ratio -->
                 <div class="embed-responsive embed-responsive-16by9 wow fadeIn" data-wow-duration="2s" data-wow-delay=".1s">
-                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jy3UlVNQm8M?rel=0&amp;showinfo=0"></iframe>
+                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SSJUIHrkWhY?rel=0&amp;showinfo=0"></iframe>
                 </div>
               </div><!-- / .col-md-10 -->
 
@@ -477,6 +482,12 @@
                 </div>
 
               </div><!-- / .row -->
+
+              <div id="nomicsCredits" class="row">
+                <div class="col-md-12">
+                  <small>*&nbsp;&nbsp;Some or all data provided by Nomics.com <a href="https://p.nomics.com/cryptocurrency-bitcoin-api" target="_blank">Cryptocurrency Market Data API.</a></small>
+                </div>
+              </div><!-- / .row -->
             </div><!-- / .container -->
           </div><!-- / .copyright -->
         </footer><!-- / .footer-contact -->
@@ -503,6 +514,7 @@
         <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
         <script src="assets/js/vendor/wow.min.js"></script>
         <script src="assets/js/vendor/animDots.js"></script>
+        <script src="assets/js/eac-counter.browser.js"></script>
 
         <!-- Google Maps -->
         <script src="assets/js/gmap.js"></script>
