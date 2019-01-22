@@ -784,22 +784,29 @@
 /* --------------------------------------------------
        Initializes the counter for the total amount of transferred ETH
 -------------------------------------------------- */
-	function initEthTranferredCounter() {
-		const eacCounter = new EacCounter();
-		
-		eacCounter.enableUSDFetching('c13b3d7a7c837cab121a749c7824b162').then(function () {
-			eacCounter.getTotalTransferred().then(function (value) {
-				if (value.eth) {
-					document.getElementById('ethTransferredCounter').innerHTML = String(Math.round(value.eth));
-					document.getElementById('ethTransferredWrapper').classList.remove('hide');
-				}
-				if (value.usd) {
-					const formatter = new Intl.NumberFormat('en-US', {
-						style: 'currency',
-						currency: 'USD',
-						minimumFractionDigits: 0
-					});
-					document.getElementById('usdTransferredCounter').innerHTML = formatter.format(Math.round(value.usd)) + '*';
+function initEthTranferredCounter() {
+		 const eacCounter = new EacCounter();
+		 eacCounter.enableUSDFetching('c13b3d7a7c837cab121a749c7824b162').then(function () {
+				 eacCounter.getTotalTransferred().then(function (value) {
+						 if (value.eth) {
+								 const options = {
+										 useEasing: true,
+								   useGrouping: false,
+								   separator: ',',
+								   decimal: '.',
+								 };
+								 const jobCounter = new CountUp("ethTransferredCounter", 0, Math.round(value.eth), 0, 2.5, options);
+								 jobCounter.start();
+								 document.getElementById('ethTransferredWrapper').classList.remove('hide');
+						 }
+						 if (value.usd) {
+								 const formatter = new Intl.NumberFormat('en-US', {
+										 style: 'currency',
+										 currency: 'USD',
+										 minimumFractionDigits: 0
+								 });
+								 document.getElementById('usdTransferredCounter').innerHTML = formatter.format(Math.round(value.usd)) + '*';
+
 
 				}
 			});
