@@ -10290,4 +10290,10 @@ form .input-error-2:focus {
   max-width: 240px;
 }
 
+.image-mew {
+  max-height: 60px;
+  max-width: 100%;
+}
+
+
 /*# sourceMappingURL=main.css.map */
